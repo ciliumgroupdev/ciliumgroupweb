@@ -3,9 +3,12 @@
 Cilium
 
 */
-  html{
-    scroll-behavior: smooth;
-  }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
   @font-face {
       font-family: 'Plain-Regular';
       src: url('../fonts/Plain-Regular.woff2') format('woff2'),
@@ -31,12 +34,12 @@ Cilium
   }
 
   :root {
-    --primary-color:        #057a8d;
+    --primary-color:        #00b7c2;
     --secondary-color:      #f1c111;
     --white-color:          #ffffff;
-    --dark-color:           #171819;
+    --dark-color:           #1b262c;
     --project-bg:           #f0f8ff;
-    --menu-bg:              #0c8195;
+    --menu-bg:              #00b7c2;
 
     --title-color:          #15141a;
     --gray-color:           #909090;
@@ -156,6 +159,10 @@ Cilium
     color: var(--primary-color);
     border-color: transparent;
 	transition: all .3s ease;
+  }
+  .custom-btn.btn-bg:hover{
+    background: #6f4a8e;
+    color: #ffffff;
   }
   
   .custom-btn:hover,
@@ -501,7 +508,7 @@ Cilium
   .marquee:before, .marquee:after{
     position: absolute;
     top:0;
-    width: 3rem;
+    width: 1rem;
     height: 100%;
     content: "";
     z-index: 1;
@@ -535,7 +542,7 @@ Cilium
   font-size: 5rem;
   white-space: nowrap;
 }
-.marquee-content img{
+.marquee-content li img{
   width: 100%;
   border: 5px solid #eee;
   height: 10vh;
@@ -551,14 +558,20 @@ Cilium
 @media (max-width: 640px){
   html{font-size:12px}
   :root{
-    --marquee-width: 100vw;
+    --marquee-width: 80%;
     --marquee-height: 16vh;
     --marquee-elements-displayed: 3;
   }
   .marquee:before, .marquee:after {width: 5rem;}
+
+  
+  
 }
 
+
   /*---------------------------------------
+  -----------------------------------------
+  -----------------------------------------
       ABOUT            
   -----------------------------------------*/
 
@@ -580,7 +593,7 @@ Cilium
 
   /*---------------------------------------
       BLOG            
-  -----------------------------------------*/
+  -----------------------------------------
 
   .blog-header {
     border-radius: var(--border-radius-small);
@@ -623,6 +636,10 @@ Cilium
   .blog-sidebar h3 {
     font-size: 18px;
   }
+  -----------------------------------------
+  -----------------------------------------
+
+  -----------------------------------------*/
 
 
 
@@ -725,6 +742,7 @@ Cilium
   -----------------------------------------*/
 
   @media screen and (min-width: 1200px) {
+    
 
     .about-info h2 {
       max-width: 70%;
