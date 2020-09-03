@@ -396,7 +396,7 @@ Cilium
     right: 32px;
     left: 32px;
     width: 90%;
-    padding: 31px;
+    padding: 12px;
   }
 
   .project-info small {
@@ -417,7 +417,7 @@ Cilium
   .project-icon {
     position: absolute;
     right: 30px;
-    top: 40px;
+    top: 15px;
     background: var(--dark-color);
     border-radius: var(--border-radius-large);
     color: var(--white-color);
